@@ -11,7 +11,8 @@ public class Primitiva {
 			System.out.println(numeros[i]);		
 		}
 	}
-
+	
+	// generamos los numeros y los asignamos al array, comprobamos si existe y si ya esta generamos uno nuevo
 	private static int[] combinacion() {
 		int[] numeros = new int[6];
 		for (int i = 0; i < numeros.length; i++) {
