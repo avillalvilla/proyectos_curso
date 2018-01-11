@@ -1,6 +1,5 @@
 package principal;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import modelo.GestionNotas;
