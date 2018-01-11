@@ -33,6 +33,8 @@ public class GestionNotas {
 		return suma/notas.size();
 	}
 	
+	// transforma el arrayList en un array para que lo pueda leer la capa de presentacion y que sea más sencillo, ocultando que realmente usamos un ArrayList, aunque no sería necesario
+	// pasando el array tambien se evita que manipule el arraylist y modifique los objetos originales
 	public Double[] devolverNota() {
 		return notas.toArray(new Double[0]);
 	}

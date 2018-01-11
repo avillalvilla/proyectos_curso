@@ -34,7 +34,7 @@ public class Notas {
 				System.out.println("La nota media es: " + gnotas.media() + "\n");
 				break;
 			case 4:
-				mostrarNotas(gnotas.devolverNota());
+				mostrarNotas(gnotas.devolverNota()); // devolverNota() devuelve un array con las notas
 				break;
 			case 5:
 				System.out.println("Hasta pronto!");
@@ -46,12 +46,12 @@ public class Notas {
 	
 	}
 	
-	private static void mostrarNotas(Double[] valores) {
+	private static void mostrarNotas(Double[] valores) { // recibe el array con las notas y lo recorre para imprimirlas
 		System.out.println("Las notas son: ");
 		for (Double d:valores) {
 			System.out.println(d);
 		}
-		System.out.println("");
+		System.out.println();
 	}
 	
 }
