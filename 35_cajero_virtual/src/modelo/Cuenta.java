@@ -14,7 +14,7 @@ public class Cuenta {
 	public void extraer(double cant) {
 		saldo -= cant;
 	}
-	
+
 	public double getSaldo() {
 		return saldo;
 	}
