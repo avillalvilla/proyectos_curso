@@ -46,7 +46,12 @@ public class Cajero {
                 System.out.println("Introduce la cantidad a extraer: ");
                 double cant = sc.nextDouble();
                 if (cant <= limite) {
-                    cuenta.extraer(cant);
+                    if (cant <= cuenta.getSaldo()) {
+                        cuenta.extraer(cant);
+                    }
+                    else {
+                        System.out.println("La cantidad indicada es superior al saldo actual");
+                    }
                 }
                 else {
                     System.out.println("La cantidad indicada excede el límite");
